@@ -22,6 +22,16 @@ public class ClsPaginaInclusaoDeUmProcesso
 	@FindBy(how = How.ID, using = "Adicionar") private WebElement btnAdicionarAssunto;
 	
 		
+	public void BotaoMenuIncluirProcesso() 
+	{
+		mProcesso.click(); 
+	}
+	
+	public void BotaoMenuIncluirNovoProcesso() 
+		{
+		mNovoProcesso.click(); 
+	}
+	
 	public void SelectSecao(String sessao) 
 	{
 		Select selOpcaoSecao = new Select(selectSecao); 
@@ -34,7 +44,7 @@ public class ClsPaginaInclusaoDeUmProcesso
 		selOpcaoClasseJudicial.selectByVisibleText(classeJudical); 
 	}
 	
-	public void BotaoIncluirProcesso() 
+	public void BotaoSalvarNovoProcesso() 
 	{
 		btnIncluir.click(); 
 	}

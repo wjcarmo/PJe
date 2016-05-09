@@ -49,8 +49,8 @@ public class ClsTestaPaginaDeLoginPJE
 	protected String recebeSenha="tjmg"; 
 	
 	
-	//protected String recebeSite = "http://pjetreina.tjmg.jus.br/pje/login.seam?loginComCertificado=true";
-	protected String recebeSite = "http://pjesup.intra.tjmg.gov.br/pje/login.seam";
+	protected String recebeSite = "http://pjetreina.tjmg.jus.br/pje/login.seam?loginComCertificado=true";
+	//protected String recebeSite = "http://pjesup.intra.tjmg.gov.br/pje/login.seam";
 	
 	protected String retornaMensagem = "Os dados abaixo foram recuperados a partir da base de dados da Secretaria da Receita Federal do Brasil.!";
 		
@@ -76,7 +76,7 @@ public class ClsTestaPaginaDeLoginPJE
 	 * @throws InterruptedException O sistema lança uma exceção caso o site esteja fora do ar.
 	 */
 	
-	@Test
+	@Ignore
 	public void mTestaLoginNoSistemaPJEAssessor() throws InterruptedException 
 	{
 		
@@ -102,7 +102,7 @@ public class ClsTestaPaginaDeLoginPJE
 	 * Caso de testes que irá testar o login do usuário com o perfil de Magistrado no sistema PJe
 	 * @throws InterruptedException O sistema lança uma exceção caso o site esteja fora do ar.
 	 */
-	@Test 	
+	@Test  	
 	public void mTestaLoginNoSistemaPJEPerfilMagistrado() throws InterruptedException 
 	{
 		
@@ -112,7 +112,7 @@ public class ClsTestaPaginaDeLoginPJE
 		
 		//Entrada de dados para teste
 		paginaDeLogin.setSiteParamentro(recebeSite);	
-		paginaDeLogin.preencherCPFCNPJ(recebeCPFCNPJMagistradoDelvan);
+		paginaDeLogin.preencherCPFCNPJ(recebeCPFCNPJMagistrado);
 		paginaDeLogin.preencherSenha(recebeSenha);
 		paginaDeLogin.clickBotaoEntrar();
 		String msg = paginaDeLogin.getSelectUsuarioLogado();
@@ -121,7 +121,7 @@ public class ClsTestaPaginaDeLoginPJE
 		
 		//Retorno esperado depois da realização dos testes
 		// Verifica se são iguais, o resultado com o esperado 		
-		AssertJUnit.assertEquals(msg, "DELVAN BARCELOS JÚNIOR"); 
+		AssertJUnit.assertEquals(msg, "Australis Australis"); 
 		
 	   }
 	
@@ -129,7 +129,7 @@ public class ClsTestaPaginaDeLoginPJE
 	 * Caso de testes que irá testar o login do usuário com o perfil de Advogado no sistema PJe
 	 * @throws InterruptedException O sistema lança uma exceção caso o site esteja fora do ar.
 	 */
-	@Test 	
+	@Ignore 	
 	public void mTestaLoginNoSistemaPJEPerfilAdvogado() throws InterruptedException 
 	{
 		
@@ -153,7 +153,7 @@ public class ClsTestaPaginaDeLoginPJE
 	 * Caso de testes que irá testar o login do usuário com o perfil de Público no sistema PJe
 	 * @throws InterruptedException O sistema lança uma exceção caso o site esteja fora do ar.
 	 */
-	@Test 	
+	@Ignore 	
 	public void mTestaLoginNoSistemaPJEPerfilPublico() throws InterruptedException 
 	{
 		
@@ -177,7 +177,7 @@ public class ClsTestaPaginaDeLoginPJE
 	 * Caso de testes que irá testar o login do usuário com o perfil de Secretaría no sistema PJe
 	 * @throws InterruptedException O sistema lança uma exceção caso o site esteja fora do ar.
 	 */
-	@Test 	
+	@Ignore 	
 	public void mTestaLoginNoSistemaPJEPerfilSecretaria() throws InterruptedException 
 	{
 		
