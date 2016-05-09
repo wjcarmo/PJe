@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="1" name="Suite de Testes Valida Login no PJe" parallel="methods">
+  <test name="Testa Fluxo por Perfil">
+    <classes>
+      <class name="br.com.tjmg.pje.TestCases.ClsTestaPaginaDeLoginPJE"/>
+      <class name="br.com.tjmg.pje.TestCases.ClsTestaOpcaoDoMenuAtividades"/>
+      <class name="br.com.tjmg.pje.TestCases.ClsTestaOpcaoDoMenuProcesso"/>
+            
+    </classes>
+  </test> <!-- Testa Logins por Perfil -->
+</suite> <!-- Suite de Testes Valida Login no PJe -->
