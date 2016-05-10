@@ -1,43 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" total="3" passed="2">
+<testng-results skipped="0" failed="1" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="25722" started-at="2016-05-09T20:56:09Z" finished-at="2016-05-09T20:56:35Z">
+  <suite name="Default suite" duration-ms="19236" started-at="2016-05-10T16:12:12Z" finished-at="2016-05-10T16:12:31Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="25722" started-at="2016-05-09T20:56:09Z" finished-at="2016-05-09T20:56:35Z">
+    <test name="Default test" duration-ms="19236" started-at="2016-05-10T16:12:12Z" finished-at="2016-05-10T16:12:31Z">
       <class name="tjmg.pje.Integracao.RegraDeNegocio.JUnit.ClsTestaOpcaoDoMenuProcesso">
-        <test-method status="PASS" signature="inicializarDriver()[pri:0, instance:tjmg.pje.Integracao.RegraDeNegocio.JUnit.ClsTestaOpcaoDoMenuProcesso@ee68d8]" name="inicializarDriver" is-config="true" duration-ms="3426" started-at="2016-05-09T17:56:09Z" finished-at="2016-05-09T17:56:12Z">
+        <test-method status="PASS" signature="inicializarDriver()[pri:0, instance:tjmg.pje.Integracao.RegraDeNegocio.JUnit.ClsTestaOpcaoDoMenuProcesso@a3ffec]" name="inicializarDriver" is-config="true" duration-ms="3792" started-at="2016-05-10T13:12:12Z" finished-at="2016-05-10T13:12:16Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- inicializarDriver -->
-        <test-method status="FAIL" signature="mTestaProcessoRotinaDeIncluirUmNovoProcesso()[pri:0, instance:tjmg.pje.Integracao.RegraDeNegocio.JUnit.ClsTestaOpcaoDoMenuProcesso@ee68d8]" name="mTestaProcessoRotinaDeIncluirUmNovoProcesso" duration-ms="21876" started-at="2016-05-09T17:56:12Z" finished-at="2016-05-09T17:56:34Z">
+        <test-method status="FAIL" signature="mTestaProcessoRotinaDeIncluirUmNovoProcesso()[pri:0, instance:tjmg.pje.Integracao.RegraDeNegocio.JUnit.ClsTestaOpcaoDoMenuProcesso@a3ffec]" name="mTestaProcessoRotinaDeIncluirUmNovoProcesso" duration-ms="15002" started-at="2016-05-10T13:12:16Z" finished-at="2016-05-10T13:12:31Z">
           <exception class="java.lang.NullPointerException">
             <full-stacktrace>
               <![CDATA[java.lang.NullPointerException
-	at tjmg.pje.Interface.Usuario.WebDriver.ClsPaginaInclusaoDeUmProcesso.BotaoMenuIncluirProcesso(ClsPaginaInclusaoDeUmProcesso.java:27)
-	at tjmg.pje.Integracao.RegraDeNegocio.JUnit.ClsTestaOpcaoDoMenuProcesso.mTestaProcessoRotinaDeIncluirUmNovoProcesso(ClsTestaOpcaoDoMenuProcesso.java:51)
+	at org.openqa.selenium.support.ui.Select.<init>(Select.java:44)
+	at tjmg.pje.Interface.Usuario.WebDriver.ClsPaginaInclusaoDeUmProcesso.SelectSecao(ClsPaginaInclusaoDeUmProcesso.java:55)
+	at tjmg.pje.Integracao.RegraDeNegocio.JUnit.ClsTestaOpcaoDoMenuProcesso.mTestaProcessoRotinaDeIncluirUmNovoProcesso(ClsTestaOpcaoDoMenuProcesso.java:56)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
 	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
-	at org.testng.TestRunner.privateRun(TestRunner.java:774)
-	at org.testng.TestRunner.run(TestRunner.java:624)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:823)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1131)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:778)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
 	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
 	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
-	at org.testng.TestNG.run(TestNG.java:1048)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1225)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1150)
+	at org.testng.TestNG.runSuites(TestNG.java:1075)
+	at org.testng.TestNG.run(TestNG.java:1047)
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:137)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:58)
@@ -47,15 +49,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- mTestaProcessoRotinaDeIncluirUmNovoProcesso -->
-        <test-method status="PASS" signature="mTestaProcessoRotinaDeIncluirUmNovoProcessoIncidental()[pri:0, instance:tjmg.pje.Integracao.RegraDeNegocio.JUnit.ClsTestaOpcaoDoMenuProcesso@ee68d8]" name="mTestaProcessoRotinaDeIncluirUmNovoProcessoIncidental" duration-ms="1" started-at="2016-05-09T17:56:34Z" finished-at="2016-05-09T17:56:34Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- mTestaProcessoRotinaDeIncluirUmNovoProcessoIncidental -->
-        <test-method status="PASS" signature="mTestaProcessoRotinaDeProcessoNaoProtocolado()[pri:0, instance:tjmg.pje.Integracao.RegraDeNegocio.JUnit.ClsTestaOpcaoDoMenuProcesso@ee68d8]" name="mTestaProcessoRotinaDeProcessoNaoProtocolado" duration-ms="1" started-at="2016-05-09T17:56:34Z" finished-at="2016-05-09T17:56:34Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- mTestaProcessoRotinaDeProcessoNaoProtocolado -->
-        <test-method status="PASS" signature="fecharDriver()[pri:0, instance:tjmg.pje.Integracao.RegraDeNegocio.JUnit.ClsTestaOpcaoDoMenuProcesso@ee68d8]" name="fecharDriver" is-config="true" duration-ms="400" started-at="2016-05-09T17:56:34Z" finished-at="2016-05-09T17:56:35Z">
+        <test-method status="PASS" signature="fecharDriver()[pri:0, instance:tjmg.pje.Integracao.RegraDeNegocio.JUnit.ClsTestaOpcaoDoMenuProcesso@a3ffec]" name="fecharDriver" is-config="true" duration-ms="412" started-at="2016-05-10T13:12:31Z" finished-at="2016-05-10T13:12:31Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- fecharDriver -->

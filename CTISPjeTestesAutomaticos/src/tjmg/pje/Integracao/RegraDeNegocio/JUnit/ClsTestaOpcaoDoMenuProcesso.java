@@ -1,5 +1,6 @@
 package tjmg.pje.Integracao.RegraDeNegocio.JUnit;
 
+import org.junit.Ignore;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterClass;
@@ -25,7 +26,7 @@ public class ClsTestaOpcaoDoMenuProcesso
 		 driver = new  FirefoxDriver();  
 	}
 	
-	@AfterClass 
+	@AfterClass
 	public void fecharDriver() 
 	{
 		if (null != driver) 
@@ -39,17 +40,19 @@ public class ClsTestaOpcaoDoMenuProcesso
   {
 		
 	ClsPaginaValidaLoginPJE login = new ClsPaginaValidaLoginPJE(driver); 
+	
 	login.setSiteParamentro(recebeSite);
 	login.preencherCPFCNPJ(recebeCPFCNPJAdvogado);
 	login.preencherSenha(recebeSenha);
 	login.clickBotaoEntrar();
 	
-	ClsPaginaInclusaoDeUmProcesso IncluirProcesso = new ClsPaginaInclusaoDeUmProcesso();
+	ClsPaginaInclusaoDeUmProcesso IncluirProcesso = new ClsPaginaInclusaoDeUmProcesso(driver);
 	
 	Thread.sleep(5000);
-		
-	IncluirProcesso.BotaoMenuIncluirProcesso();
-	IncluirProcesso.BotaoMenuIncluirNovoProcesso();
+	
+	IncluirProcesso.pagina();
+	//IncluirProcesso.BotaoMenuIncluirProcesso();
+	//IncluirProcesso.BotaoMenuIncluirNovoProcesso();
 	IncluirProcesso.SelectSecao("Belo Horizonte");
 	IncluirProcesso.SelectClasseJudicial("DESPEJO (92)");
 	IncluirProcesso.BotaoSalvarNovoProcesso();
@@ -57,14 +60,14 @@ public class ClsTestaOpcaoDoMenuProcesso
 
   }  
   
-  @Test
+  @Ignore
   public void mTestaProcessoRotinaDeIncluirUmNovoProcessoIncidental()
   {
 
   }
   
 
-  @Test
+  @Ignore
   public void mTestaProcessoRotinaDeProcessoNaoProtocolado()
   {
 

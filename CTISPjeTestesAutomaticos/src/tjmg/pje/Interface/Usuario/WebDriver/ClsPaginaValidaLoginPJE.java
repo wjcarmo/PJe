@@ -86,12 +86,7 @@ public class ClsPaginaValidaLoginPJE
 	public ClsPaginaValidaLoginPJE(WebDriver driver) throws InterruptedException {
 		super();
 		this.driver = driver;
-		this.recebeCPFCNPJ = recebeCPFCNPJ;
-		this.recebeSenha = recebeSenha;
-		this.retornaMensagem = retornaMensagem;
-		this.driver = driver; 		
-	
-		
+			
 	}
 	public ClsPaginaValidaLoginPJE() 
 	{
