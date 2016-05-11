@@ -5,6 +5,7 @@
     <classes>
       <class name="tjmg.pje.Integracao.RegraDeNegocio.JUnit.ClsTestaOpcaoDoMenuProcesso">
         <methods>
+          <include name="tearDown"/>
           <include name="fecharDriver"/>
           <include name="inicializarDriver"/>
           <include name="mTestaProcessoRotinaDeIncluirUmNovoProcesso"/>

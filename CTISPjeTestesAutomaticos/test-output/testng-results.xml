@@ -2,22 +2,50 @@
 <testng-results skipped="0" failed="1" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="19236" started-at="2016-05-10T16:12:12Z" finished-at="2016-05-10T16:12:31Z">
+  <suite name="Default suite" duration-ms="41902" started-at="2016-05-11T16:09:55Z" finished-at="2016-05-11T16:10:37Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="19236" started-at="2016-05-10T16:12:12Z" finished-at="2016-05-10T16:12:31Z">
+    <test name="Default test" duration-ms="41902" started-at="2016-05-11T16:09:55Z" finished-at="2016-05-11T16:10:37Z">
       <class name="tjmg.pje.Integracao.RegraDeNegocio.JUnit.ClsTestaOpcaoDoMenuProcesso">
-        <test-method status="PASS" signature="inicializarDriver()[pri:0, instance:tjmg.pje.Integracao.RegraDeNegocio.JUnit.ClsTestaOpcaoDoMenuProcesso@a3ffec]" name="inicializarDriver" is-config="true" duration-ms="3792" started-at="2016-05-10T13:12:12Z" finished-at="2016-05-10T13:12:16Z">
+        <test-method status="PASS" signature="inicializarDriver()[pri:0, instance:tjmg.pje.Integracao.RegraDeNegocio.JUnit.ClsTestaOpcaoDoMenuProcesso@4f787b]" name="inicializarDriver" is-config="true" duration-ms="3613" started-at="2016-05-11T13:09:55Z" finished-at="2016-05-11T13:09:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- inicializarDriver -->
-        <test-method status="FAIL" signature="mTestaProcessoRotinaDeIncluirUmNovoProcesso()[pri:0, instance:tjmg.pje.Integracao.RegraDeNegocio.JUnit.ClsTestaOpcaoDoMenuProcesso@a3ffec]" name="mTestaProcessoRotinaDeIncluirUmNovoProcesso" duration-ms="15002" started-at="2016-05-10T13:12:16Z" finished-at="2016-05-10T13:12:31Z">
-          <exception class="java.lang.NullPointerException">
+        <test-method status="FAIL" signature="mTestaProcessoRotinaDeIncluirUmNovoProcesso()[pri:0, instance:tjmg.pje.Integracao.RegraDeNegocio.JUnit.ClsTestaOpcaoDoMenuProcesso@4f787b]" name="mTestaProcessoRotinaDeIncluirUmNovoProcesso" duration-ms="37902" started-at="2016-05-11T13:09:59Z" finished-at="2016-05-11T13:10:36Z">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[Unable to locate element: {"method":"id","selector":"processoTrfForm:save"}
+Command duration or timeout: 30.15 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.0', revision: '35ae25b', time: '2016-03-15 17:00:58'
+System info: host: 'GEJUD-536163', ip: '10.0.36.102', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_91'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=23.0.1, platform=WINDOWS, browserConnectionEnabled=true, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 17b75b53-0cc2-45f8-bdd1-d98a4f4e81a2
+*** Element info: {Using=id, value=processoTrfForm:save}]]>
+            </message>
             <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
-	at org.openqa.selenium.support.ui.Select.<init>(Select.java:44)
-	at tjmg.pje.Interface.Usuario.WebDriver.ClsPaginaInclusaoDeUmProcesso.SelectSecao(ClsPaginaInclusaoDeUmProcesso.java:55)
-	at tjmg.pje.Integracao.RegraDeNegocio.JUnit.ClsTestaOpcaoDoMenuProcesso.mTestaProcessoRotinaDeIncluirUmNovoProcesso(ClsTestaOpcaoDoMenuProcesso.java:56)
+              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"id","selector":"processoTrfForm:save"}
+Command duration or timeout: 30.15 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.0', revision: '35ae25b', time: '2016-03-15 17:00:58'
+System info: host: 'GEJUD-536163', ip: '10.0.36.102', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_91'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=23.0.1, platform=WINDOWS, browserConnectionEnabled=true, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 17b75b53-0cc2-45f8-bdd1-d98a4f4e81a2
+*** Element info: {Using=id, value=processoTrfForm:save}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:413)
+	at org.openqa.selenium.By$ById.findElement(By.java:218)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at tjmg.pje.Integracao.RegraDeNegocio.JUnit.ClsTestaOpcaoDoMenuProcesso.mTestaProcessoRotinaDeIncluirUmNovoProcesso(ClsTestaOpcaoDoMenuProcesso.java:126)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -43,16 +71,27 @@
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:137)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:58)
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"id","selector":"processoTrfForm:save"}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.0', revision: '35ae25b', time: '2016-03-15 17:00:58'
+System info: host: 'GEJUD-536163', ip: '10.0.36.102', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_91'
+Driver info: driver.version: unknown
+	at <anonymous class>.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/P5523732/AppData/Local/Temp/anonymous7002687971925580792webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10770)
+	at <anonymous class>.fxdriver.Timer.prototype.setTimeout/<.notify(file:///C:/Users/P5523732/AppData/Local/Temp/anonymous7002687971925580792webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:625)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- mTestaProcessoRotinaDeIncluirUmNovoProcesso -->
-        <test-method status="PASS" signature="fecharDriver()[pri:0, instance:tjmg.pje.Integracao.RegraDeNegocio.JUnit.ClsTestaOpcaoDoMenuProcesso@a3ffec]" name="fecharDriver" is-config="true" duration-ms="412" started-at="2016-05-10T13:12:31Z" finished-at="2016-05-10T13:12:31Z">
+        <test-method status="PASS" signature="fecharDriver()[pri:0, instance:tjmg.pje.Integracao.RegraDeNegocio.JUnit.ClsTestaOpcaoDoMenuProcesso@4f787b]" name="fecharDriver" is-config="true" duration-ms="358" started-at="2016-05-11T13:10:36Z" finished-at="2016-05-11T13:10:37Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- fecharDriver -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:tjmg.pje.Integracao.RegraDeNegocio.JUnit.ClsTestaOpcaoDoMenuProcesso@4f787b]" name="tearDown" is-config="true" duration-ms="0" started-at="2016-05-11T13:10:37Z" finished-at="2016-05-11T13:10:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
       </class> <!-- tjmg.pje.Integracao.RegraDeNegocio.JUnit.ClsTestaOpcaoDoMenuProcesso -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->

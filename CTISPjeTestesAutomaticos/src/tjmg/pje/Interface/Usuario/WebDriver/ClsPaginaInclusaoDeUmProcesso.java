@@ -3,6 +3,7 @@ package tjmg.pje.Interface.Usuario.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -14,8 +15,9 @@ import org.openqa.selenium.support.ui.Select;
 public class ClsPaginaInclusaoDeUmProcesso 
 {
 	
-	@FindBy(how = How.ID, using = "j_id69:j_id71") private WebElement mProcesso;
-	@FindBy(how = How.LINK_TEXT, using = "http://pjetreina.tjmg.jus.br/pje/QuadroAviso/listViewQuadroAvisoMensagem.seam?cid=224915#") private WebElement mNovoProcesso;
+	@FindBy(how = How.ID, using = "_1010_j_id83j_id84") private WebElement mProcesso;
+	@FindBy(how = How.ID, using = "_1011_j_id83j_id85") private WebElement mNovoProcesso;
+	
 	@FindBy(how = How.ID, using = "processoTrfForm:classeJudicial:classeJudicialjurisdicaoComboDecoration:classeJudicialjurisdicaoCombo") private WebElement selectSecao;
 	@FindBy(how = How.ID, using = "processoTrfForm:classeJudicial:classeJudicialComboClasseJudicialDecoration:classeJudicialComboClasseJudicial") private WebElement selectClasseJudical;
 	@FindBy(how = How.ID, using = "processoTrfForm:save") private WebElement btnIncluir;
@@ -23,7 +25,9 @@ public class ClsPaginaInclusaoDeUmProcesso
 	@FindBy(how = How.ID, using = "Adicionar") private WebElement btnAdicionarAssunto;
 	
 	
-	
+	private String baseUrl;
+	private boolean acceptNextAlert = true;
+	private StringBuffer verificationErrors = new StringBuffer();
 	private WebElement pagina;
 	private String retornaMensagem;
 	private String recebeCPFCNPJ;
@@ -35,19 +39,22 @@ public class ClsPaginaInclusaoDeUmProcesso
 	
 		public void pagina()
 		{
-		   driver.getCurrentUrl();
-		   driver.navigate().to("http://pjetreina.tjmg.jus.br/pje/Processo/cadastrar.seam?newInstance=true");
+			driver.get(baseUrl + "/pje/login.seam?loginComCertificado=true");
+		  
 		}
 		
 		
 	public void BotaoMenuIncluirProcesso() 
 	{
-		mProcesso.click(); 
+		//mProcesso.click(); 
+		 driver.findElement(By.id("_1010_j_id83j_id84")).click();
+		 
 	}
 	
 	public void BotaoMenuIncluirNovoProcesso() 
 		{
-		mNovoProcesso.click(); 
+		driver.findElement(By.id("_1011_j_id83j_id85")).click();
+		//mNovoProcesso.click(); 
 	}
 	
 	public void SelectSecao(String sessao) 
